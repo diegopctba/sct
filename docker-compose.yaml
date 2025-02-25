@@ -1,0 +1,24 @@
+
+services:
+  postgresdb:
+    image: postgres:16-alpine3.21
+    container_name: postgresdb
+    environment:
+      POSTGRES_DB: sct
+      POSTGRES_USER: sct
+      POSTGRES_PASSWORD: sct
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: sct
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgresdb
+
+volumes:
+  db: null
