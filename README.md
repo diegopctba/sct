@@ -1,7 +1,5 @@
 # Contas a pagar API REST
-API simples de um sistema de contas a pagar.
-
-O sistema permitirá realizar o CRUD de uma conta a pagar, alterar a situação dela quando for efetuado o pagamento, obter informações sobre as contas cadastradas no banco de dados e importar um lote de contas de um arquivo CSV.
+API Sistema de contas a pagar.
 
 # Instruções iniciais
 1. Clonar o projeto
